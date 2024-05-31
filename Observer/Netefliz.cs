@@ -8,9 +8,9 @@ namespace Observer
 {
     public class Netfliz
     {
-        private List<IObservador> observadores = new List<IObservador>();
+        private List<Assinante> observadores = new List<Assinante>();
 
-        public void AdicionarObservador(IObservador observador) => observadores.Add(observador);
+        public void AdicionarObservador(Assinante observador) => observadores.Add(observador);
 
         public void RemoverObservador(string nome)
         {

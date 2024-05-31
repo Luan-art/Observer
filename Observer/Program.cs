@@ -48,6 +48,8 @@ void CancelarAssinatura()
     Console.WriteLine("Digite o nome do assinante a cancelar:");
     string nome = Console.ReadLine();
     netfliz.RemoverObservador(nome);
+    Console.ReadKey();
+
 }
 
 void AdcionarNovoFilme()
@@ -62,6 +64,7 @@ void AdcionarNovoFilme()
     Console.WriteLine();
 
     netfliz.NotificarObservadores($"{filme}");
+    Console.ReadKey();
 }
 
 void AdcionarNovoAssiantente()
@@ -73,5 +76,8 @@ void AdcionarNovoAssiantente()
     Assinante novoAssinante = new Assinante(nome);
     netfliz.AdicionarObservador(novoAssinante);
     Console.WriteLine($"Assinante {nome} adicionado.");
+
+    Console.ReadKey();
+
 }
 
