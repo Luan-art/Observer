@@ -9,6 +9,6 @@ namespace Observer
     public interface IObservador
     {
         void Atualizar(string mensagem);
-
+        string nome { get; }
     }
 }
